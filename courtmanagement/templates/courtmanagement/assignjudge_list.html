@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+ <h1>Assigned_Judge_list</h1>
+<table class="table table-striped table-hover table-bordered" >  
+    <tr> 
+        <td>
+
+             {% for assignjudge in assignjudge_list %}
+              LowOfficer_id-- {{ assignjudge.LowOfficer }}<br>
+              Judge_id --{{ assignjudge.Judge }}<br>
+              Case_id --{{ assignjudge.Case }}<br><br>
+              
+            {% endfor %}
+            
+        </td>
+    </tr>    
+   
+
+</table> 
+
+
+
+ 
+</body>
+</html>
+
+{% endblock %} 

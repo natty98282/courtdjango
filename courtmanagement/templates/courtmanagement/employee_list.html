@@ -1,0 +1,48 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <form action = "{% url 'searchbar' %}" method=POST>
+        {% csrf_token %}
+    <input class="form-control me-2" type="text" name="search" >
+    <button class="btn btn-outline-success" type="submit" >search</button>
+</form>   
+ <h1>Employee_List</h1>
+ <table class="table table-striped table-hover table-bordered" >  
+  {% for employee in employee_list %}
+    <tr> 
+        <td>
+               <u1>
+       <a href="{% url 'show-emp' employee.id %}">{{employee}} </a>      
+      <li>{{ employee.Emp_Id }}</li>
+   </u1> 
+        </td>
+        <td align="right">
+             <a class="btn btn-outline-secondary" href="{% url 'update-empreg' employee.id %}" >update</a>
+         </td>
+    </tr>    
+  {% endfor %}
+
+</table> 
+
+</body>
+</html>
+
+{% endblock %} 

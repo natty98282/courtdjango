@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: gray ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+ <h1>Comment_detail_view</h1>
+ <p> {% if object.body != None and object.body != '' %}{{ object.body }}{% else %}empty comment box{% endif %} </p>
+</body>
+</html>
+
+{% endblock %} 

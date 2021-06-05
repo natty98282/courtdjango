@@ -1,0 +1,52 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+        <style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+        img {
+    max-width: 1700%;
+    max-height: 1800px;
+        }
+    </style>
+</head>
+</head>
+<body>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       
+                        <img src="{% static 'courtmanagement/img/pic_1.jpg'%}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                        
+                            <h1>COMMENT PAGE</h1>
+                            
+
+                               <form  method = "post" enctype="multipart/form-data">
+                                   {% csrf_token %}
+                                   {{form.as_p}}
+                                  <input class = "btn btn-secondary" type=submit value ="submit">
+                                </form>  
+                        </div>
+                    
+                      
+                     </div>
+            </div>
+
+</body>
+</html>
+
+
+{% endblock %}     

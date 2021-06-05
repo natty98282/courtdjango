@@ -1,0 +1,128 @@
+
+body {
+    background-color: rgba(0,139,139 );
+    margin: 0px;
+    padding: 0px;
+}
+
+        
+ #header {
+            background-color:#61122f;
+            margin: 10px;
+            height: 90px;
+            text-align:center;
+            
+        }
+
+.navbar ul {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 90px;
+    padding: 5px;
+    list-style-type: none;
+    text-decoration: none ;
+    background-color:aliceblue;
+    margin: 10px;
+}
+.navbar ul li {
+                display: inline;
+            }
+
+ .navbar ul li a {
+                    text-decoration: none;
+                    font-family: Ariel;
+                    background-color: #000;
+                }
+
+        .main {
+            background-color: #61122f;
+            margin-right: 10px;
+            margin-left: 260px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding: 20px;
+            height: 90px;
+            font-size: 110%
+        }
+
+        .sideright {
+            background-color: #e5e4d7;
+            margin-rigth: 10px;
+            margin-left: 10px;
+            margin-top: 0px;
+            font-size: 10px;
+            float: left;
+            width: 220px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #main-content {
+            text-align: center;
+        }
+    /*==============manager====================================*/
+body {
+    background-color: rgba(0,139,139 );
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#header2 {
+    background-color: #61122f;
+    margin: 10px;
+    height: 90px;
+    text-align: center;
+}
+
+#nav ul {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 90px;
+    padding: 5px;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: aliceblue;
+    margin: 10px;
+}
+
+    #nav ul li {
+        display: inline;
+    }
+
+        #nav ul li a {
+            text-decoration: none;
+            font-family: Ariel;
+            background-color: #000;
+        }
+
+.main {
+    background-color: #61122f;
+    margin-right: 10px;
+    margin-left: 260px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    height: 90px;
+    font-size: 110%
+}
+
+.sideright {
+    background-color: #e5e4d7;
+    margin-rigth: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 10px;
+    float: left;
+    width: 220px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main-content {
+    text-align: center;
+}

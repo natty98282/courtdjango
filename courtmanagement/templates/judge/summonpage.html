@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>summon</title>
+		<style>
+        body {
+            background-color: indigo ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+</head>
+<body>
+     <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       
+                        <img src="{% static 'courtmanagement/img/pic_1.jpg'%}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                        
+                            <h1>SUMMON</h1>
+                            
+
+                               <form  method = "post" enctype="multipart/form-data">
+                                   {% csrf_token %}
+                                   {{form.as_p}}
+                                  <input class = "btn btn-secondary" type=submit value ="submit">
+                                </form>  
+                        </div>
+                    
+                      
+                     </div>
+            </div>
+
+
+
+    
+
+</body>
+</html>
+
+
+{% endblock %}    

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: gray ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+ <h1>Update_Account</h1><br>
+                 <form method="POST" action="">
+                              {% csrf_token %}
+                              {{form.username.label}}
+                              {{form.username}}
+                              <br>
+                              {{form.email.label}}
+                              {{form.email}}
+                                 <br>
+                              {{form.password1.label}}
+                              {{form.password1}}
+                                   <br>
+                                   <br>
+                              {{form.password2.label}}
+                              {{form.password2}}
+                                     <br>
+                                      <br>
+                              <center><button class="btn btn-secondary" type="submit" >update</button></center>
+                  </form>
+</body>
+</html>
+
+{% endblock %} 

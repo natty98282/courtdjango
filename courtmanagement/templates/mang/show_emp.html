@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    
+ <h1>Employee---Detail</h1>
+   
+   
+      <li>{{ employee.Emp_Id }}</li>
+      <li>{{ employee.First_Name }}-{{ employee.Last_Name }}</li>
+      <li>Adress-{{ employee.Address }}</li>
+      <li>phone_no-{{ employee.phone_no }}</li>
+      <li>sallary-{{ employee.Sallary }}</li>
+      <li>status-{{ employee.Status }}</li>
+      <li>age-{{ employee.Age }}</li>
+      <img src="{{ employee.profile_pic.url }}"><img src="{{ employee.qr_code.url }}"><br>-------------<br>
+  
+
+ 
+
+</body>
+</html>
+
+{% endblock %} 

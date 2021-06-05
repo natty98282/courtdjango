@@ -1,0 +1,25 @@
+   <center>
+   	{% if search %}
+    	<h1>you searched for {{ search }}</h1><br>
+    	{% for employee in employees %}
+
+   <u1>
+      <li>{{ employee.Emp_Id }}</li>
+      <li>{{ employee.First_Name }}-{{ employee.Last_Name }}</li>
+      <li>Adress-{{ employee.Address }}</li>
+      <li>phone_no-{{ employee.phone_no }}</li>
+      <li>sallary-{{ employee.Sallary }}</li>
+      <li>status-{{ employee.Status }}</li>
+      <li>age-{{ employee.Age }}</li>
+      <img src="{{ employee.profile_pic.url }}"><img src="{{ employee.qr_code.url }}"><br>-------------<br>
+   </u1>   
+
+    	{% endfor %}<br>
+   	{% else %}
+    	<h1>Search didnt match any of employee id</h1>
+   	{% endif %}
+   </center>
+
+
+
+ 

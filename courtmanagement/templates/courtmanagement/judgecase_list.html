@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+  
+ <h1>Registered Case_List</h1>
+ <table class="table table-striped table-hover table-bordered">
+
+
+    {% for case in case_list %}
+      <tr>
+        <td>
+             <a href="{% url 'show-case' case.id %}">{{case}}</a> <li>{{ case.Case_Id }}</li>
+         </td>
+         
+     </tr>
+{% endfor %}
+
+</table> 
+
+</body>
+</html>
+
+{% endblock %} 

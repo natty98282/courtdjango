@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>set shedule_page</title>
+		<style>
+        body {
+            background-color: gray ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+</head>
+<body>
+<h1>SET SHEDULE</h1>
+
+<form action="" method = "post" >
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type=submit>
+
+</body>
+</html>
+
+
+{% endblock %}    

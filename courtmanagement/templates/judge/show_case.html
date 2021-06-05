@@ -1,0 +1,43 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    
+ <h1>Case---Detail</h1>
+   
+    
+   <u1>
+      <li> download the Case file<a href="{{case.casefile.url}}" download="{{case.casefile.url}}">download</a></li>
+      <li>{{ case.Case_Id }}</li>
+      <li>{{ case.First_Name }}-{{ case.Last_Name }}</li>
+      <li>Adress-{{ case.Address }}</li>
+      <li>phone_no-{{ case.phone_no }}</li>
+      <li>case_type-{{ case.CaseType }}</li>
+      <li>status-{{ case.Status }}</li>
+      <li>age-{{ case.Age }}</li>
+      <img src="{{ case.profile_pic.url }}"><img src="{{ case.qr_code.url }}"><br>-------------<br>
+
+   </u1>
+ 
+
+</body>
+</html>
+
+{% endblock %} 

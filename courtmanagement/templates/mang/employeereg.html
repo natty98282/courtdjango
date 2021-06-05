@@ -1,0 +1,53 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<style>
+        body {
+            background-color: white ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+        img {
+    max-width: 1700%;
+    max-height: 1800px;
+        }
+    </style>
+</head>
+</head>
+<body>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       
+                        <img src="{% static 'courtmanagement/img/carousel-2.jpg'%}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                        
+                            <h1>REGISTER AN EMPLOYEE</h1>
+
+                               <form  method = "POST" enctype="multipart/form-data">
+                                   {% csrf_token %}
+                                   {{ form.media }}
+                                   {{form.as_p}}
+                                  <input class = "btn btn-secondary" type=submit value="register">
+                                </form>  
+                        </div>
+                    
+                       <img src="{% static 'courtmanagement/img/portfolio-3.jpg'%}" alt="Carousel Image">
+                    
+                     </div>
+            </div>
+
+</body>
+</html>
+
+
+{% endblock %}     

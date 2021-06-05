@@ -1,0 +1,47 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+        body {
+            background-color: gray ;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+ <h1>Schedule_list</h1>
+<table class="table table-striped table-hover table-bordered" >  
+    <tr> 
+        <td>
+
+             {% for shedule in shedule_list %}
+              LowOfficer_id-- {{ shedule.LowOfficer }}<br>
+              Judge_id-- {{ shedule.Judge }}<br>
+              court_room-- {{ shedule.Court_Room }}<br>
+              content--{{ shedule.body }}<br>
+              Date--{{ shedule.Date }}<br>
+
+
+            {% endfor %}
+            
+        </td>
+    </tr>    
+
+</table> 
+
+
+
+ 
+</body>
+</html>
+
+{% endblock %} 

@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jimma town cort wabepage</title>
+        <link rel="stylesheet" type="text/css" href= "{% static 'courtmanagement/css/style.css'%}">
+    <head>
+            
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=" #navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="#" class="nav-item nav-link active">Choice</a><br><br>
+                                <a href="/createaccount" class="nav-item nav-link">Creat_Account</a>
+
+                                <a href="/account_list" class="nav-item nav-link">Manage_Account</a>
+                                
+                                <a href="/employeereg" class="nav-item nav-link">Register_Emp
+                                <a href="/comment_list" class="nav-item nav-link">Comment_List
+                                <a href="/employee_list" class="nav-item nav-link">EMPLOYEE_Info  
+                                <a align="right" href="/logout" class="nav-item nav-link">logout</a>                </a>
+                            </div>
+                            
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            
+            
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'courtmanagement/img/carousel-2.jpg'%}" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft">Manager page</h1>
+                            
+                            <a class="btn animated fadeInUp" href="homepage.html">WELCOME TO THE PAGE</a>
+                        </div>
+                    
+
+                     <div class="carousel-item">
+                        <img src="{% static 'courtmanagement/img/portfolio-5.jpg'%}" alt="Carousel Image">
+                        
+                     </div>
+                    
+                     <div class="carousel-item">
+                        <img src="{% static 'courtmanagement/img/pic-1.jpg'%}" alt="Carousel Image">
+                        
+                     </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feature-top">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-check-circle"></i>
+                                <h3>Legal</h3>
+                                <p>Govt Approved</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6">
+                           
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Feature End-->
+        
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
