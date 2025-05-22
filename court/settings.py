@@ -133,3 +133,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
 
 
 django_heroku.settings(locals())
+SESSION_COOKIE_SECURE = True
